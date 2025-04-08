@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images du Château de Versailles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom right, #1536f1, #2575fc, #c0c6ea, #eac3c0, #df0707);
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery-container {
+            display: block;
+            margin-top: 30px;
+        }
+
+        .image-card {
+            margin: 20px auto;
+            width: 60%; /* Set a fixed width relative to the viewport */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .image-card img {
+            width: 100%; /* Fixed width, responsive to the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            border-radius: 10px;
+        }
+
+        .caption {
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffeb3b; /* Gold text color */
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 1em;
+            color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Images du Château de Versailles</h1>
+    <div class="gallery-container">
+        <!-- Image 1 -->
+        <div class="image-card">
+            <img src="1. (8)CV.jpg" alt="Palace of Versailles Garden">
+            <div class="caption">Les jardins de Versailles</div>
+        </div>
+        <!-- Image 2 -->
+        <div class="image-card">
+            <img src="1. (9)CV.jpeg" alt="Palace of Versailles Hall of Mirrors">
+            <div class="caption">Galerie des Glaces</div>
+        </div>
+        <!-- Image 3 -->
+        <div class="image-card">
+            <img src="1. (10)CV.jpg" alt="Palace of Versailles Night View">
+            <div class="caption">Vue du Chateau de Versailles la Nuit</div>
+        </div>
+    </div>
+    <h3>
+            Sai Parate
+    </h3>
+</body>
+</html>
