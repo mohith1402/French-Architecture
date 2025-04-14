@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France Map with Important Places</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to right, #1536f1, #2575fc, #c0c6ea, #eac3c0, #da3030, #df0707);
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #ffeb3b; /* Gold color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        h3 {
+            font-size: 0.5em;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            color: #000000;
+        }
+
+        .map-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+        .map {
+            max-width: 90%;
+            height: auto;
+            width: 1000px;
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .marker {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .marker:hover {
+            transform: translate(-50%, -50%) scale(1.5);
+            background-color: yellow;
+        }
+
+        .tooltip {
+            position: absolute;
+            display: none;
+            background: rgb(255, 255, 255);
+            color: black;
+            transform: translate(-50%, 25%);
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            font-size: 1em;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            z-index: 100;
+        }
+
+        .versailles-tooltip {
+        transform: translate(-50%, -110%); /* Moves the tooltip above the marker */
+        }
+
+
+        .tooltip img {
+            width: 250px;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .marker:hover + .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Monuments en France</h1>
+    <h2>Cliquez sur les marqueurs pour visiter les monuments</h2>
+    <div class="map-container">
+        <img src="mapparis.jpeg" alt="Map of France" class="map">
+
+        <!-- Marker with tooltip -->
+        <a href="1. (1)Chateau de Versailles Selector.html" target="_blank" class="marker" style="top: 68%; left: 15%;"></a>
+        <div class="tooltip versailles-tooltip" style="top: 68%; left: 15%;">
+            <img src="1. (4)CV-ex.jpg" alt="Château de Versailles">
+            <br>
+            Château de Versailles
+            <br>
+            48.8049° N, 2.1204° E
+        </div>
+        
+
+        <a href="2. (1)Musee du Louvre Selector.html" target="_blank" class="marker" style="top: 29%; left: 73%;"></a>
+        <div class="tooltip" style="top: 21%; left: 73%;">
+            <img src="2. (4)ML-ex.jpg" alt="Musée du Louvre">
+            <br>
+            Musée du Louvre
+            <br>
+            48.8606° N, 2.3376° E
+
+        </div>
+
+        <a href="3. (1)Notre Dame Selector.html" target="_blank" class="marker" style="top: 35%; left: 78%;"></a>
+        <div class="tooltip" style="top: 27%; left: 78%;">
+            <img src="3. (4)ND-ex.jpg" alt="Notre Dame">
+            <br>
+            Notre Dame
+            <br>
+            48.8530° N, 2.3499° E
+        </div>
+
+        <a href="4. (1)Arc de Triomphe Selector.html" target="_blank" class="marker" style="top: 20%; left: 62%;"></a>
+        <div class="tooltip" style="top: 12%; left: 62%;">
+            <img src="4. (4)AT-ex.jpg" alt="Arc de Triomphe">
+            <br>
+            Arc de Triomphe
+            <br>
+            48.8738° N, 2.2950° E
+        </div>
+
+        <a href="5. (1)Sainte Chapelle Selector.html" target="_blank" class="marker" style="top: 33.5%; left: 74.5%;"></a>
+        <div class="tooltip" style="top: 25.5%; left: 74.5%;">
+            <img src="5. (4)SC-ex.jpg" alt="Sainte Chapelle">
+            <br>
+            Sainte Chapelle
+            <br>
+            48.8554° N, 2.3450° E
+        </div>
+
+        <a href="6. (1)Eiffel Tower Selector.html" target="_blank" class="marker" style="top: 31%; left: 62%;"></a>
+        <div class="tooltip" style="top: 23%; left: 62%;">
+            <img src="6. (4)ET-ex.jpg" alt="Eiffel Tower">
+            <br>
+            Eiffel Tower
+            <br>
+            48.8584° N, 2.2945° E
+        </div>
+    </div>
+    <h3>288,245,253,227,238,228</h3>
+</body>
+</html>
